@@ -34,7 +34,7 @@
       const data = await response.json();
       tasks.value = data.map((task) => task.title);
     } catch (error) {
-      console.log('Error fetching tasks', error);
+      console.error('Error fetching tasks', error);
     }
   })
 
